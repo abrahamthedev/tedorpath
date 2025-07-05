@@ -30,3 +30,66 @@ The website is fully modular, component-based, and built using PHP, Tailwind CSS
 
 📁 Project Structure
 
+/tedor-path
+├── assets/
+│ ├── css/
+│ ├── js/
+│ └── images/
+├── components/
+│ ├── header.php
+│ ├── footer.php
+│ ├── navbar.php
+│ └── ...
+├── config/
+│ ├── about-config.php
+│ ├── contact-config.php
+│ └── ...
+├── pages/
+│ ├── index.php
+│ ├── about.php
+│ ├── contact.php
+│ └── ...
+├── partials/
+│ ├── head.php
+│ └── scripts.php
+└── .htaccess
+
+
+- **assets/** → Static resources like CSS, JS, and images.
+- **components/** → Reusable PHP UI components (e.g. header, footer, navbar).
+- **config/** → Centralized configuration files for page content.
+- **pages/** → Individual page templates.
+- **partials/** → Shared partials for head tags, scripts, etc.
+- **.htaccess** → Apache configuration for routing and security.
+
+💻 Local Development
+
+To run the website locally:
+
+1. Install PHP 8+ and Apache.
+2. Clone this repository:
+    ```bash
+    git clone https://github.com/yourusername/tedorpath
+    ```
+3. Place the project in your local Apache `htdocs` directory.
+4. Access the website via:
+    ```
+    http://localhost/tedor-path/
+    ```
+
+🎨 Brand Identity
+
+- **Brand Colors:** Custom blues and accent shades for a modern, fresh look.
+- **Typography:**
+  - `font-body` → Main content text
+  - `font-heading` → Page headings and titles
+
+✨ Contributions
+
+We welcome contributions, suggestions, and improvements. Please open an issue or submit a pull request!
+
+📄 License
+
+[MIT License](LICENSE)
+
+**Tedor Path — Modern Learning, Modern Ethiopia.**

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-full h-full">
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="ai-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5433FF"/>
+      <stop offset="50%" stop-color="#20BDFF"/>
+      <stop offset="100%" stop-color="#A5FECB"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main diamond shape -->
+  <path d="M50 15 L20 50 L50 85 L80 50 Z
+           M50 30 L75 50 L50 70 L25 50 Z" 
+        fill="url(#ai-grad)" 
+        stroke="#FFFFFF" 
+        stroke-width="0.5"
+        stroke-opacity="0.2"/>
+  
+  <!-- Center rectangle (window) -->
+  <rect x="40" y="45" width="20" height="10" 
+        fill="#FFFFFF" 
+        opacity="0.8" 
+        rx="1" 
+        ry="1"/>
+  
+  <!-- Side circles (lights) -->
+  <circle cx="35" cy="40" r="5" 
+          fill="#FFFFFF" 
+          opacity="0.8"/>
+  <circle cx="65" cy="40" r="5" 
+          fill="#FFFFFF" 
+          opacity="0.8"/>
+</svg>

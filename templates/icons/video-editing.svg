@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-full h-full">
+  <linearGradient id="video-grad" x1="0" y1="0" x2="100" y2="100">
+    <stop offset="0" stop-color="#FF5F6D"/>
+    <stop offset="1" stop-color="#FFC371"/>
+  </linearGradient>
+  <path d="M80 30L60 50l20 20V30z" fill="url(#video-grad)"/>
+  <rect x="30" y="30" width="40" height="40" rx="5" fill="none" stroke="#555" stroke-width="5"/>
+  <path d="M40 40h20v20H40z" fill="#555" fill-opacity="0.2"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-full h-full">
+  <linearGradient id="ps-shade" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#001E36"/>
+    <stop offset="1" stop-color="#2C6C9D"/>
+  </linearGradient>
+  <rect width="100" height="100" fill="url(#ps-shade)"/>
+  <path d="M35 30v40h30V30H35zm5 5h20v30H40V35zm5 10v10h10V45H45zm0 5h5v5h-5v-5z" fill="#31A8FF"/>
+</svg>

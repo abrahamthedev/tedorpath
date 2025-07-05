@@ -1,0 +1,27 @@
+/* ======================
+        Base Styles
+   ====================== */
+:root {
+  /* Colors */
+  --color-light: #ffffff;
+  --color-dark: #111827;
+  --color-primary: #007FFF;
+  --color-gray-300: #d1d5db;
+  --color-gray-600: #4b5563;
+
+  /* Same timing variables as animations.css */
+  --transition-default: var(--duration-fast);
+  --transition-slow: var(--duration-normal);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-light);
+}
+
+.dark body {
+  background-color: var(--color-dark);
+}

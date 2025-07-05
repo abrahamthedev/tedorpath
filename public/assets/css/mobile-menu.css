@@ -1,0 +1,74 @@
+/* Mobile Menu Container */
+#mobile-menu {
+  --menu-width: 80%;
+  --menu-max-width: 20rem;
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: var(--menu-width);
+  max-width: var(--menu-max-width);
+  height: 100vh;
+  z-index: 1050;
+  transform: translateX(100%);
+  transition: transform var(--duration-normal) var(--ease-out-expo);
+  background-color: white;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  /* Visibility handled by animation system */
+  will-change: transform;
+}
+
+#mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* Overlay Styles */
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1040;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 
+    opacity var(--duration-normal) var(--ease-out-expo),
+    visibility 0s linear var(--duration-normal);
+  will-change: opacity;
+}
+
+#menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
+/* Body Lock */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 992px) {
+  #mobile-menu,
+  #menu-overlay {
+    display: none !important;
+  }
+  
+  body.menu-open {
+    overflow: auto;
+  }
+}
+
+/* Dark Mode Support */
+.dark #mobile-menu {
+  background-color: var(--color-dark);
+  border-left: 1px solid var(--color-gray-600);
+}
+
+/* Animation System Integration */
+.preloader-active #menu-overlay {
+  display: none !important;
+}

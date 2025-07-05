@@ -1,0 +1,80 @@
+[data-theme-toggle] {
+  /* Use existing color variables from base.css */
+  --light-bg: var(--color-gray-300);
+  --dark-bg: var(--color-gray-600);
+  --light-ball: var(--color-light);
+  --dark-ball: var(--color-dark);
+  
+  position: relative;
+  display: inline-flex;
+  height: 1.5rem;
+  width: 2.75rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--light-bg);
+  transition: 
+    background-color var(--duration-fast) ease,
+    border-color var(--duration-fast) ease;
+  will-change: transform, background-color;
+}
+
+.dark [data-theme-toggle] {
+  background-color: var(--dark-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme-ball] {
+  position: absolute;
+  top: 0.125rem;
+  left: 0.125rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 9999px;
+  background-color: var(--light-ball);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: 
+    transform var(--duration-fast) var(--ease-out-expo),
+    background-color var(--duration-fast) ease;
+  pointer-events: none;
+}
+
+.dark [data-theme-ball] {
+  background-color: var(--dark-ball);
+}
+
+[data-theme-icon] {
+  position: absolute;
+  top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  transition: 
+    opacity var(--duration-fast) var(--ease-out-expo),
+    color var(--duration-fast) ease;
+}
+
+[data-theme-icon="dark"] {
+  right: 0.25rem;
+  color: var(--color-primary);
+}
+
+[data-theme-icon="light"] {
+  left: 0.25rem;
+  color: var(--color-primary);
+}
+
+/* Mobile menu integration */
+#mobile-menu [data-theme-toggle] {
+  background-color: var(--light-bg);
+  margin: 0.5rem auto;
+}
+
+.dark #mobile-menu [data-theme-toggle] {
+  background-color: var(--dark-bg);
+}
+
+/* Animation system compatibility */
+[data-theme-toggle] [class*="animate-"] {
+  animation-fill-mode: both !important;
+}

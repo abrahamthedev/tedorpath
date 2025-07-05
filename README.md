@@ -22,10 +22,10 @@ The website is fully modular, component-based, and built using PHP, Tailwind CSS
 
 🚀 Tech Stack
 
-| Layer | Technology |
-| **Frontend** | HTML5, Tailwind CSS (via CDN or build), Alpine.js (optional) |
-| **Backend** | PHP 8+ |
-| **Web Server** | Apache |
+| Layer | Technology | \n
+| **Frontend** | HTML5, Tailwind CSS (via CDN or build), Alpine.js (optional) | \n
+| **Backend** | PHP 8+ | \n
+| **Web Server** | Apache | \n
 | **Deployment** | Local |
 
 📁 Project Structure

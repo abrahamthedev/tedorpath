@@ -83,7 +83,7 @@ To run the website locally:
 1. Install PHP 8+ and Apache.
 2. Clone this repository:
     ```bash
-    git clone https://github.com/abrahamthedev/tedorpath
+    git clone https://github.com/yourusername/tedorpath
     ```
 3. Place the project in your local Apache `htdocs` directory.
 4. Access the website via:

@@ -43,7 +43,7 @@ The website is fully modular, component-based, and built using PHP, Tailwind CSS
 | **Deployment** | Local |
 
 📁 Project Structure
-
+```
 /tedor-path
 ├── assets/
 │ ├── css/
@@ -67,6 +67,7 @@ The website is fully modular, component-based, and built using PHP, Tailwind CSS
 │ ├── head.php
 │ └── scripts.php
 └── .htaccess
+```
 
 - `assets/` → Static resources like CSS, JS, and images.
 - `components/` → Reusable PHP UI components (e.g. header, footer, navbar).

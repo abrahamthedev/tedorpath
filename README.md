@@ -8,17 +8,31 @@ Tedor Path is an educational initiative that aims to make modern learning access
 
 The website is fully modular, component-based, and built using PHP, Tailwind CSS, and a custom configuration-driven content management structure.
 
-🧱 Features
+## 📑 Features
 
-📄 **Component-Based Architecture** – Reusable, organized structure for rapid development.
-🖋️ **Dynamic Content with Config Files** – Pages are driven by PHP arrays (`about-config.php`, `contact-config.php`, etc.).
-🌙 **Dark Mode** – Full support for light and dark themes with smooth transitions.
-🌐 **Responsive Design** – Tailored for desktop, tablet, and mobile devices.
-💬 **Contact Form** – Interactive inquiry submission (can be extended with backend).
-📍 **Google Maps Integration** – Embedded location with external map link.
-🎨 **Brand Font & Style System** – Unified typography and color palette with `font-body`, `font-heading`, and brand blues.
-⚙️ **Easily Configurable** – Centralized config management for content and metadata.
+- 📄 **Component-Based Architecture** – Reusable, organized structure for rapid development.
+- 🖋️ **Dynamic Content with Config Files** – Pages are driven by PHP arrays (e.g. `about-config.php`, `contact-config.php`, etc.).
+- 🌙 **Dark Mode** – Full support for light and dark themes with smooth transitions.
+- 🌐 **Responsive Design** – Tailored for desktop, tablet, and mobile devices.
+- 💬 **Contact Form** – Interactive inquiry submission (can be extended with backend).
+- 📍 **Google Maps Integration** – Embedded location with external map link.
+- 🎨 **Brand Font & Style System** – Unified typography and color palette with `font-body`, `font-heading`, and brand blues.
+- ⚙️ **Easily Configurable** – Centralized config management for content and metadata.
 
+---
+
+## 🚀 Tech Stack
+
+| Layer          | Technology                                               |
+|----------------|----------------------------------------------------------|
+| **Frontend**   | HTML5, Tailwind CSS (via build)                   |
+| **Backend**    | PHP 8+                                                   |
+| **Web Server** | Apache                                                   |
+| **Deployment** | Local                                                    |
+
+---
+
+## 📁 Project Structure
 
 🚀 Tech Stack
 
@@ -54,13 +68,12 @@ The website is fully modular, component-based, and built using PHP, Tailwind CSS
 │ └── scripts.php
 └── .htaccess
 
-
-- **assets/** → Static resources like CSS, JS, and images.
-- **components/** → Reusable PHP UI components (e.g. header, footer, navbar).
-- **config/** → Centralized configuration files for page content.
-- **pages/** → Individual page templates.
-- **partials/** → Shared partials for head tags, scripts, etc.
-- **.htaccess** → Apache configuration for routing and security.
+- `assets/` → Static resources like CSS, JS, and images.
+- `components/` → Reusable PHP UI components (e.g. header, footer, navbar).
+- `config/` → Centralized configuration files for page content.
+- `pages/` → Individual page templates.
+- `partials/` → Shared partials for head tags, scripts, etc.
+- `.htaccess` → Apache configuration for routing and security.
 
 💻 Local Development
 
